@@ -15,5 +15,8 @@ func main(){
 	var userTickets int
 	userName = "Pranesh"
 	userTickets = 2
+	// Pointer
+	fmt.Println(userName)
+	fmt.Println(&userName)
 	fmt.Printf("User %v booked %v tickets\n",userName,userTickets)
 }
