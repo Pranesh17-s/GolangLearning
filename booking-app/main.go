@@ -11,6 +11,9 @@ func main(){
 	fmt.Printf("Welcome to %v booking app\n", confName)
 	fmt.Printf("We have %v tickets and %v tickets remaining, Hurry UP!!\n",noOfTickets,remTickets)
 	fmt.Println("Get Your tickets")
+	
+	// var bookings = [64]string{}
+	var booking string
 	var firstName string
 	var lastName string
 	var email string
@@ -30,6 +33,8 @@ func main(){
 	// Pointer
 	// fmt.Println(userName)
 	// fmt.Println(&userName)
+
+	
 	remTickets = remTickets - userTickets
 
 	fmt.Printf("Thank you %v %v for booking %v tickets.You will receive a confirmation email at %v\n",firstName,lastName,userTickets,email)
