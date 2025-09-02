@@ -8,11 +8,14 @@ func main(){
 	const noOfTickets = 64
 	var remTickets uint = 64
 	// fmt.Printf("Type of confName is %T,noOfTickets is %T,remTickets is %T\n",confName,noOfTickets,remTickets)
+
 	fmt.Printf("Welcome to %v booking app\n", confName)
 	fmt.Printf("We have %v tickets and %v tickets remaining, Hurry UP!!\n",noOfTickets,remTickets)
 	fmt.Println("Get Your tickets")
 	
 	// var bookings = [64]string{}
+	// booking := []string{}
+
 	var booking []string
 	var firstName string
 	var lastName string
@@ -30,11 +33,13 @@ func main(){
 
 	fmt.Println("Enter no of Tickets: ")
 	fmt.Scan(&userTickets)
+
 	// Pointer
 	// fmt.Println(userName)
 	// fmt.Println(&userName)
 
 	// booking[0] = firstName + " " + lastName	
+	
 	booking = append(booking,firstName+" "+lastName)
 	remTickets = remTickets - userTickets
 	fmt.Printf("The entire Slice %v\n",booking)
