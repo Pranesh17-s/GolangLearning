@@ -1,0 +1,4 @@
+We will use VS code as IDE for this learning
+
+1. Open Vs Code if Installed if not Open any browser and Download Vs Code
+2. Now Go to the extensions and install the Go extension by google.
