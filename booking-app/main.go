@@ -13,7 +13,7 @@ func main(){
 	fmt.Println("Get Your tickets")
 	
 	// var bookings = [64]string{}
-	var booking [64]string
+	var booking []string
 	var firstName string
 	var lastName string
 	var email string
@@ -34,7 +34,8 @@ func main(){
 	// fmt.Println(userName)
 	// fmt.Println(&userName)
 
-	booking[0] = firstName + " " + lastName	
+	// booking[0] = firstName + " " + lastName	
+	booking = append(booking,firstName+" "+lastName)
 	remTickets = remTickets - userTickets
 	fmt.Printf("The entire array %v\n",booking)
 	fmt.Printf("The first element is %v\n",booking[0])
