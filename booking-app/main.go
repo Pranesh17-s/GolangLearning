@@ -13,10 +13,11 @@ func main(){
 	fmt.Println("Get Your tickets")
 	var userName string
 	var userTickets int
-	userName = "Pranesh"
+	fmt.Scan(&userName)
 	userTickets = 2
 	// Pointer
-	fmt.Println(userName)
-	fmt.Println(&userName)
+	// fmt.Println(userName)
+	// fmt.Println(&userName)
+
 	fmt.Printf("User %v booked %v tickets\n",userName,userTickets)
 }
