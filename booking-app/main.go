@@ -16,6 +16,8 @@ func main(){
 	// var bookings = [64]string{}
 	// booking := []string{}
 
+	for{}
+
 	var booking []string
 	var firstName string
 	var lastName string
