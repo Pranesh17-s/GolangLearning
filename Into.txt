@@ -1,1 +1,6 @@
+Go (or Golang) is a modern programming language developed by Google, designed for building fast and reliable applications, especially in cloud, DevOps, and distributed systems. Nowadays, many big tech companies have also adopted and rely on it, including:
 
+    *Google uses for services behind YouTube and Google Cloud.
+    *Uber moved parts of their real-time ride systems to Go for speed.
+    *Netflix uses it for server-side services that need quick responses.
+    *Dropbox rewrote key infrastructure in Go to handle millions of file syncs per second, etc.
