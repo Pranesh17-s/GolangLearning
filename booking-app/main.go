@@ -1,3 +1,5 @@
 package main
 
-Print("Hello, World!")
+func main(){
+	Print("Hello, World")
+}
