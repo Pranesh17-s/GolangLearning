@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Print("Hello, World")
-	fmt.Println("This is Pranesh")
+	fmt.Print("Welcome to Booking App")
+	fmt.Println("Get Your tickets")
 }
