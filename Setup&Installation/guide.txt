@@ -1,0 +1,7 @@
+1. Open any Browser.
+2. Search Go install
+3. In the results look for go.dev/docs/install
+4. Visit that site and Select your OS and click download
+5. This will navigate you to go.dev/dl/
+6. In this site download Go for your OS and click the download button
+7. Open the exe after it's downloaded and follow the instructions in it.
