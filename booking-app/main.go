@@ -10,4 +10,9 @@ func main(){
 	fmt.Printf("Welcome to %v booking app\n", confName)
 	fmt.Printf("We have %v tickets and %v tickets remaining, Hurry UP!!\n",noOfTickets,remTickets)
 	fmt.Println("Get Your tickets")
+	var userName string
+	var userTickets int
+	userName = "Pranesh"
+	userTickets = 2
+	fmt.Printf("User %v booked %v tickets\n",userName,userTickets)
 }
