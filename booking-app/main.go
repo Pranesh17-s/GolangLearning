@@ -7,7 +7,7 @@ func main(){
 	var confName ="Learning Go"
 	const noOfTickets = 64
 	var remTickets = 64
-	fmt.Println("Welcome to",confName,"get started")
-	fmt.Println("we have",noOfTickets,"and",remTickets,"are remaining, Hurry up!!")
+	fmt.Printf("Welcome to %v booking app\n", confName)
+	fmt.Printf("We have %v tickets and %v tickets remaining, Hurry UP!!\n",noOfTickets,remTickets)
 	fmt.Println("Get Your tickets")
 }
