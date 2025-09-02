@@ -5,3 +5,4 @@
 5. This will navigate you to go.dev/dl/
 6. In this site download Go for your OS and click the download button
 7. Open the exe after it's downloaded and follow the instructions in it.
+8. After installing verify by opening your command prompt and type go. This will list some commands if Go is installed without issue.
