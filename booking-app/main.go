@@ -37,10 +37,10 @@ func main(){
 	// booking[0] = firstName + " " + lastName	
 	booking = append(booking,firstName+" "+lastName)
 	remTickets = remTickets - userTickets
-	fmt.Printf("The entire array %v\n",booking)
+	fmt.Printf("The entire Slice %v\n",booking)
 	fmt.Printf("The first element is %v\n",booking[0])
 	fmt.Printf("The type of booking is %T\n",booking)
-	fmt.Printf("The length of Array is %v\n",len(booking))
+	fmt.Printf("The length of Slice is %v\n",len(booking))
 
 	fmt.Printf("Thank you %v %v for booking %v tickets.You will receive a confirmation email at %v\n",firstName,lastName,userTickets,email)
 	fmt.Printf("%v tickets remaining for %v\n",remTickets,confName)
