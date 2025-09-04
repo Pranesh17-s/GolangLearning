@@ -23,4 +23,16 @@ func main(){
 	fmt.Println(j<=s)
 	fmt.Println(j>=s)
 	
+	// Logical Operators
+	firstNum := 10
+	secondNum := 20
+	if(firstNum != secondNum && firstNum<=secondNum){
+		fmt.Println("True")
+	}
+	if(firstNum == secondNum || secondNum > firstNum){
+		fmt.Println("True")
+	}
+	if(!(firstNum == secondNum)){
+		fmt.Println("True")
+	}
 }
