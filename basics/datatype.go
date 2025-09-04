@@ -75,5 +75,14 @@ func main() {
     fmt.Printf("division : %g / %g = %g\n", n, m, n/m)
 	fmt.Println()
 
+	// Boolean Type in Go
+	// The boolean type in Go is represented by the keyword bool. It can hold one of two values: true or false.
+	var boolVar1 bool = true
+	var boolVar2 bool = false
+	fmt.Println("Boolean Types:")
+	fmt.Println("boolVar1:", boolVar1)
+	fmt.Println("boolVar2:", boolVar2)
+	fmt.Println()
+
 	
 }
