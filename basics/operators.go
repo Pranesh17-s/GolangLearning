@@ -35,4 +35,16 @@ func main(){
 	if(!(firstNum == secondNum)){
 		fmt.Println("True")
 	}
+
+	// Bitwiese Operators
+	num_1 := 2
+	num_2 := 4
+	fmt.Printf("%d & %d is %d\n",num_1,num_2,num_1&num_2)
+	fmt.Printf("%d | %d is %d\n",num_1,num_2,num_1|num_2)
+	fmt.Printf("%d ^ %d is %d\n",num_1,num_2,num_1^num_2)
+	fmt.Printf("%d & %d is %d\n",num_1,num_2,num_1&num_2)
+	fmt.Printf("%d << %d is %d\n",num_1,num_2,num_1<<num_2)
+	fmt.Printf("%d >> %d is %d\n",num_1,num_2,num_1>>num_2)
+
+	
 }
