@@ -93,4 +93,14 @@ func main() {
 	fmt.Println("Character at index 1:", string(strVar[1]))
 	fmt.Println()
 
+	// Formatted Output
+	fmt.Print("Formatted Output:\n")
+	fmt.Printf("Integer: %d\n", intVar)
+	fmt.Printf("Float: %f\n", a)
+	fmt.Printf("Boolean: %t\n", boolVar1)
+	fmt.Printf("String: %s\n", strVar)
+	fmt.Printf("Type of intVar: %T\n", intVar)
+	fmt.Printf("Type of a: %T\n", a)
+	fmt.Printf("Type of boolVar1: %T\n", boolVar1)
+	fmt.Printf("Type of strVar: %T\n", strVar)
 }
