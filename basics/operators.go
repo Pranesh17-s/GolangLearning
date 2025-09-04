@@ -61,4 +61,14 @@ func main(){
 	fmt.Println(newNum)
 	newNum %= newOne
 	fmt.Println(newNum)
+
+	// Additional Operators
+	new_a := 4
+
+	// Using address of operator(&) and
+	// pointer indirection(*) operator
+	new_b := &new_a
+	fmt.Println(*new_b)
+	*new_b = 7
+	fmt.Println(new_a)
 }
