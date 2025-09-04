@@ -41,5 +41,39 @@ func main() {
     //Modulus
     fmt.Printf(" remainder : %d %% %d = %d\n", x, y, x%y)
 	fmt.Println()
+
 	// Floating-Point Types in Go
+	// float32	32-bit IEEE 754 floating-point number
+	// float64	64-bit IEEE 754 floating-point number
+
+	a := 20.45
+    b := 34.89
+    
+    // Subtraction of two 
+    // floating-point number
+    c := b-a
+    
+    // Display the result 
+    fmt.Printf("Result is: %f", c)
+    
+    // Display the type of c variable
+    fmt.Printf("\nThe type of c is : %T", c)
+
+	fmt.Println()
+
+	// Basic float arithmetic operations
+
+	var n float32 = 5.00
+    var m float32 = 2.25
+    //Addition
+    fmt.Printf("addition :  %g + %g = %g\n ", n, m, n+m)
+    //Subtraction
+    fmt.Printf("subtraction : %g - %g = %g\n", n, m, n-m)
+    //Multiplication
+    fmt.Printf("multiplication : %g * %g = %g\n", n, m, n*m)
+    //Division
+    fmt.Printf("division : %g / %g = %g\n", n, m, n/m)
+	fmt.Println()
+
+	
 }
