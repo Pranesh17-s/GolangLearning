@@ -94,6 +94,12 @@ func main() {
 	fmt.Println()
 
 	// Formatted Output
+	// Using fmt.Printf for formatted output
+	// %d - integer
+	// %f - floating-point number
+	// %t - boolean
+	// %s - string
+	// %T - type of variable
 	fmt.Print("Formatted Output:\n")
 	fmt.Printf("Integer: %d\n", intVar)
 	fmt.Printf("Float: %f\n", a)
