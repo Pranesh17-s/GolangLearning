@@ -16,7 +16,8 @@ func main(){
 	// var bookings = [64]string{}
 	// booking := []string{}
 
-	var booking []string
+	for{
+			var booking []string
 	var firstName string
 	var lastName string
 	var email string
@@ -46,4 +47,5 @@ func main(){
 	fmt.Printf("%v tickets remaining for %v\n",remTickets,confName)
 
 	fmt.Println("The bookings are: ",booking)
+	}
 }
