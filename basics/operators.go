@@ -46,5 +46,19 @@ func main(){
 	fmt.Printf("%d << %d is %d\n",num_1,num_2,num_1<<num_2)
 	fmt.Printf("%d >> %d is %d\n",num_1,num_2,num_1>>num_2)
 
-	
+	// Assignment operators
+	newNum := 20
+	newOne := 10
+	newNum = newOne // Assignment
+	fmt.Println(newNum)
+	newNum += newOne
+	fmt.Println(newNum)
+	newNum -= newOne
+	fmt.Println(newOne)
+	newNum *= newOne
+	fmt.Println(newNum)
+	newNum /= newOne
+	fmt.Println(newNum)
+	newNum %= newOne
+	fmt.Println(newNum)
 }
