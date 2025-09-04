@@ -84,5 +84,13 @@ func main() {
 	fmt.Println("boolVar2:", boolVar2)
 	fmt.Println()
 
-	
+	// String Type in Go
+	// The string type in Go is represented by the keyword string. Strings are sequences of characters and are immutable.
+	var strVar string = "Hello, Go!"
+	fmt.Println("String Type:")
+	fmt.Println("strVar:", strVar)
+	fmt.Println("Length of strVar:", len(strVar))
+	fmt.Println("Character at index 1:", string(strVar[1]))
+	fmt.Println()
+
 }
