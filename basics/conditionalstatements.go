@@ -18,4 +18,12 @@ func main() {
 			fmt.Printf("%d is a two digit number\n",a)
 		}
 	}
+	// if-else-if ladder
+	if(a<0){
+		fmt.Printf("%d is a negative number\n",a)
+	}else if(a==0){
+		fmt.Printf("%d is zero\n",a)
+	}else{
+		fmt.Printf("%d is a positive number\n",a)
+	}
 }
