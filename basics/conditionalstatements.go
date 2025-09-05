@@ -12,4 +12,10 @@ func main() {
 	}else{
 		fmt.Printf("%d is not greater than 9\n",a)
 	}
+	// Nested if statement
+	if(a>9){
+		if(a<100){
+			fmt.Printf("%d is a two digit number\n",a)
+		}
+	}
 }
