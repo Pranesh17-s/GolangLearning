@@ -26,4 +26,16 @@ func main() {
 	}else{
 		fmt.Printf("%d is a positive number\n",a)
 	}
+	//if else-if ladder to find the largest of three numbers
+	var b int = 20
+	var c int = 15
+	if(a>=b && a>=c){
+		fmt.Printf("%d is the largest number\n",a)
+	}else if(b>=a && b>=c){
+		fmt.Printf("%d is the largest number\n",b)
+	}else if(c>=a && c>=b){
+		fmt.Printf("%d is the largest number\n",c)
+	}else{
+		fmt.Printf("All numbers are equal\n")
+	}
 }
