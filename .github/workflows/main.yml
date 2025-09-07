@@ -1,23 +1,24 @@
-name: Auto Merge PRs from Specific User (main branch only)
+name: Auto Merge PRs from pranesh-2005
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
-
-permissions:
-  contents: write
-  pull-requests: write
+    types: [opened, synchronize, reopened]
 
 jobs:
   automerge:
     runs-on: ubuntu-latest
+    if: github.actor == 'pranesh-2005' && github.base_ref == 'main'
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Merge PR if author matches and target is main
-        if: github.event.pull_request.user.login == 'Pranesh-2005' && github.event.pull_request.base.ref == 'main'
+      - name: Set up GitHub CLI
         run: |
-          gh pr merge ${{ github.event.pull_request.number }} --merge --delete-branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          sudo apt-get install -y gh
+
+      - name: Authenticate GitHub CLI
+        run: echo "${{ secrets.PAT_TOKEN }}" | gh auth login --with-token
+
+      - name: Merge PR
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --merge --delete-branch --admin
