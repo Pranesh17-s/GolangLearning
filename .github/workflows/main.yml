@@ -1,0 +1,25 @@
+name: Auto Merge PRs from Pranesh-2005
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prmerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Auto-merge PRs from Pranesh-2005
+        if: ${{ github.event.pull_request.user.login == 'Pranesh-2005' }}
+        uses: pascalgn/automerge-action@v0.16.4
+        with:
+          merge-method: merge    # or squash / rebase
+          require-label: false   # merge even without labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
