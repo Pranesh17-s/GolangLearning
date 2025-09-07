@@ -1,0 +1,27 @@
+name: PR Merge by Pranesh
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  prmerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'pranesh-2005' && github.base_ref == 'main'
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Merge PR
+        env:
+          GH_TOKEN: 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
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --merge \
+            --delete-branch \
+            --admin \
+            --repo ${{ github.repository }}
