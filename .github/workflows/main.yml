@@ -1,4 +1,4 @@
-name: Auto Merge PRs from pranesh-2005
+name: PR Merge by Pranesh
 
 on:
   pull_request:
