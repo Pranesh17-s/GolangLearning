@@ -18,7 +18,7 @@ jobs:
 
       - name: Merge PR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: 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
         run: |
           gh pr merge ${{ github.event.pull_request.number }} \
             --merge \
