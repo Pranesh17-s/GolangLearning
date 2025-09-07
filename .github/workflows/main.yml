@@ -1,0 +1,19 @@
+name: Auto Merge PRs from Specific User (main branch only)
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Merge PR if author matches and target is main
+        if: github.event.pull_request.user.login == 'Pranesh-2005' && github.event.pull_request.base.ref == 'main'
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --merge --admin --delete-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
