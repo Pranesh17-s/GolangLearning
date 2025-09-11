@@ -6,4 +6,5 @@ func main(){
 	fmt.Scan(&principal,&rate,&time)
 	simpleInterest:=(principal*rate*time)/100
 	fmt.Printf("Simple Interest: %.2f\n",simpleInterest)
+	
 }
