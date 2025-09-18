@@ -31,5 +31,3 @@ Go (or Golang) is a modern programming language developed by Google, designed fo
 
 - High demand in job market, especially for backend and cloud roles
 - Excellent performance for
-
-## PR-Review check
