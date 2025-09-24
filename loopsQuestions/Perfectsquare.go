@@ -6,10 +6,10 @@ func main(){
 	fmt.Print("Enter a Number: ")
 	fmt.Scan(&num)
 	b := math.Sqrt(float64(num))
-	val := int(b*b)
+	val := int(b) * int(b)
 	if(val == num){
-		fmt.Printf("%d is a Perfect Number\n",num)
+		fmt.Printf("%d is a Perfect Square\n",num)
 	}else{
-		fmt.Printf("%d is not a Perfect Number\n",num)
+		fmt.Printf("%d is not a Perfect Square\n",num)
 	}
 }
